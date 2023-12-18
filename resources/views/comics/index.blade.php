@@ -12,7 +12,7 @@
           <div class="col-2 mb-4">
             <img class="w-100 mb-2" src="{{ $comic['thumb'] }}">
             <span class="text-uppercase comic-title">
-                <a href="{{ route('comics.show', $comic) }}">
+                <a href="{{ route('comics.show', $comic->id) }}">
                     {{ $comic['title'] }}
                 </a>
             </span>
