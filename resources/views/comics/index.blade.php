@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="load-more text-center text-uppercase py-4">
-      <a class="load-btn" href="#">load more</a>
+      <a class="load-btn" href="{{ route('comics.create') }}">Add comic</a>
     </div>
   </section>
 

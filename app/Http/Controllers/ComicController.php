@@ -24,4 +24,12 @@ class ComicController extends Controller
     {
         return view('comics.show', compact('comic'));
     }
+
+    /**
+     * Add a new comic
+     */
+    public function create()
+    {
+        return view('comics.create');
+    }
 }
