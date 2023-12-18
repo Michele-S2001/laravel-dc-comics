@@ -3,12 +3,12 @@
 @section('page-title', 'Details')
 
 @section('content')
-    
+
   <section class="thumb pb-3 pt-5">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-10">
-          <img class="thumbnail" src="https://picsum.photos/200/300">
+          <img class="thumbnail" src="{{ $comic->thumb }}">
         </div>
       </div>
     </div>
@@ -20,9 +20,9 @@
         <div class="col-10">
           <div class="row">
             <div class="col-8">
-              <h4 class="text-uppercase mb-3">Lorem ipsum dolor sit amet consectetur.</h4>
+              <h4 class="text-uppercase mb-3"> {{ $comic->title }} </h4>
               <div class="comic-state d-flex mb-3 px-3">
-                <div class="price flex-grow-1">U.S. Price: <span class="text-light">$19.90</span></div>
+                <div class="price flex-grow-1">U.S. Price: <span class="text-light"> {{ $comic->price }} </span></div>
                 <div class="availability d-flex">
                   <div class="availability__state text-uppercase px-3">
                     available
@@ -33,7 +33,7 @@
                 </div>
               </div>
               <div class="comic-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime porro quasi magnam enim. Ea ut laboriosam excepturi temporibus illum quis sunt nostrum dolorum distinctio minima praesentium sapiente totam eius incidunt perspiciatis debitis ad explicabo vitae, corporis quidem aliquid quas ipsum? Architecto, nam eos alias est id magni, dicta laudantium adipisci culpa quas modi quis veritatis inventore, dolores ullam in. Nobis delectus, quos totam mollitia numquam iste minima quam odit voluptate laborum voluptatum expedita eligendi autem praesentium consectetur officia earum?
+                {{ $comic->description }}
               </div>
             </div>
             <div class="col-4">
@@ -69,15 +69,15 @@
                 <h4 class="pb-4 title">Specs</h4>
                 <div class="detail pt-2 art d-flex justify-content-between">
                   <p>Series:</p>
-                  <p>LOREM IPSUM</p>
+                  <p> {{ $comic->series }} </p>
                 </div>
                 <div class="detail pt-2 art d-flex justify-content-between">
                   <p>U.S.Price:</p>
-                  <p>$19.90</p>
+                  <p> {{ $comic->price }} </p>
                 </div>
                 <div class="detail pt-2 art d-flex justify-content-between">
                   <p>On sale date:</p>
-                  <p>mm/dd/yyyy</p>
+                  <p> {{ $comic->sale_date }} </p>
                 </div>
               </div>
             </div>

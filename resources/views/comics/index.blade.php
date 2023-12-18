@@ -7,13 +7,13 @@
     <div class="container">
       <h3 class="text-uppercase d-inline-block">current series</h3>
       <div class="row">
-        @foreach ($comics as $item)
+        @foreach ($comics as $comic)
 
           <div class="col-2 mb-4">
-            <img class="w-100 mb-2" src="{{ $item['thumb'] }}">
+            <img class="w-100 mb-2" src="{{ $comic['thumb'] }}">
             <span class="text-uppercase comic-title">
-                <a href="{{ route('comics.show', $item) }}">
-                    {{ $item['title'] }}
+                <a href="{{ route('comics.show', $comic) }}">
+                    {{ $comic['title'] }}
                 </a>
             </span>
           </div>

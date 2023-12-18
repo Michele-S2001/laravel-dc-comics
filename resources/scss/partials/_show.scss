@@ -6,6 +6,7 @@
     position: absolute;
     bottom: 30%;
     border: 2px solid $white;
+    max-width: 200px;
   }
 }
 
@@ -33,7 +34,7 @@
   .specs > .title {
     margin-bottom: 0;
   }
-  
+
 
   .talent > *,
   .specs > * {
