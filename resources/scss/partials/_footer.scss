@@ -1,0 +1,35 @@
+.page-footer {
+  color: $grey;
+  font-weight: 300;
+
+  .footer-links {
+    li {
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+  
+    .terms-policy {
+      font-size: 15px;
+      letter-spacing: 2px;
+  
+      span {
+        color: $blue;
+      }
+    }
+  }
+
+  .footer-contacts {
+    background-color: $darkGrey;
+
+    .sign-up {
+      font-weight: 400;
+      font-size: 20px;
+      border: 2px solid $blue;
+      padding: 10px 15px;
+    }
+
+    .follow {
+      color: $blue;
+    }
+  }
+}

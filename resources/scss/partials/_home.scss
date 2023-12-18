@@ -1,0 +1,50 @@
+.current-series {
+
+  background-color: $tooDarkGrey;
+
+  h3 {
+    background-color: $blue;
+    padding: 10px 20px;
+    margin-top: -50%;
+    margin-bottom: 40px;
+  }
+
+  img { 
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .comic-title {
+    font-size: 14px;
+  }
+
+  .load-btn {
+    background-color: $blue;
+    padding: 5px 50px;
+    font-size: 16px;
+  }
+
+}
+
+.dc-more {
+  background-color: $blue;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    img {
+      height: 60px;
+    }
+
+    .power-svg {
+      height: 40px;
+    }
+
+    span {
+      font-size: 15px;
+      display: inline-block;
+      padding-left: 10px;
+    }
+  }
+}

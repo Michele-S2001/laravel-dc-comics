@@ -1,0 +1,48 @@
+.thumb {
+  background-color: $blue;
+  position: relative;
+
+  .thumbnail {
+    position: absolute;
+    bottom: 30%;
+    border: 2px solid $white;
+  }
+}
+
+.comic-details {
+  .comic-state {
+    background-color: $green;
+    color: $lightGreen;
+
+    & > * {
+      line-height: 50px;
+    }
+  }
+
+  .availability {
+    .availability__state {
+      border-right: 1px solid $darkGreen;
+    }
+  }
+}
+
+.comic-additional-details {
+  background-color: $lightGrey;
+
+  .talent > .title,
+  .specs > .title {
+    margin-bottom: 0;
+  }
+  
+
+  .talent > *,
+  .specs > * {
+    border-bottom: 1px solid $grey;
+  }
+
+  .detail {
+    p {
+      max-width: 60%;
+    }
+  }
+}
