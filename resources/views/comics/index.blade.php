@@ -10,12 +10,14 @@
         @foreach ($comics as $comic)
 
           <div class="col-2 mb-4">
-            <img class="w-100 mb-2" src="{{ $comic['thumb'] }}">
-            <span class="text-uppercase comic-title">
-                <a href="{{ route('comics.show', $comic->id) }}">
-                    {{ $comic['title'] }}
-                </a>
-            </span>
+            <div class="thumb-showcase">
+                <div class="overlay d-flex flex-column justify-content-center align-items-center gap-3">
+                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-sm btn-warning">More info</a>
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-sm btn-success">Edit</a>
+                </div>
+                <img class="w-100 mb-2" src="{{ $comic['thumb'] }}">
+            </div>
+            <span class="text-uppercase comic-title">{{ $comic['title'] }}</span>
           </div>
 
         @endforeach
