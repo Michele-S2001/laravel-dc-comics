@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-8">
-                    <form action="" method="POST">
+                    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="mb-3">
