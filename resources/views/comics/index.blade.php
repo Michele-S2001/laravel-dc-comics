@@ -14,6 +14,11 @@
                 <div class="overlay d-flex flex-column justify-content-center align-items-center gap-3">
                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-sm btn-warning">More info</a>
                     <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-sm btn-success">Edit</a>
+                    <form action="{{ route('comics.destroy', $comic->id)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <input class="btn btn-sm btn-danger" type="submit" value="Delete">
+                    </form>
                 </div>
                 <img class="w-100 mb-2" src="{{ $comic['thumb'] }}">
             </div>
