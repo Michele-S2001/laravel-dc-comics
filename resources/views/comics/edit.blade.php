@@ -81,7 +81,10 @@
                                 {{ $comic->description }}
                             </textarea>
                         </div>
-                        <input type="submit" class="btn btn-secondary" value="Confirm changes">
+                        <div class="btn_group d-flex justify-content-between">
+                            <input type="submit" class="btn btn-secondary" value="Confirm changes">
+                            <a href="{{route('comics.index')}}" class="btn btn-light">Annul</a>
+                        </div>
                     </form>
                 </div>
             </div>
